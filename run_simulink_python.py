@@ -5,7 +5,6 @@ from matplotlib import pyplot as plt
 my_engine = matlab.engine.start_matlab() # 在python中启动matlab
 env_name = 'my_model2' # 文件名
 my_engine.load_system(env_name)
-my_engine.start_model_using_m(nargout=0) # 运行初始化的m文件
 
 simulation_time = 10 # simulation time (s)
 pause_time = 0.1
